@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savini Studio — Evolución de Activos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+    <header class="nav-wrapper">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-text">
+            <span class="nav-logo-main">SAVINI STUDIO</span>
+            <span class="nav-logo-sub">Evolución de Activos</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="equipo.html" class="nav-link">El Equipo</a></li>
+          <li><a href="compromiso.html" class="nav-link">Compromiso</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+
+        <a href="contacto.html" class="btn-nav"
+          >Diagnóstico estratégico <span>→</span></a
+        >
+
+        <!-- Burger: siempre visible en mobile, FUERA del menú desplegable -->
+        <button class="nav-burger" id="navBurger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+      <!-- Menú mobile: panel SEPARADO dentro del header pero debajo del nav -->
+      <div class="nav-mobile-menu" id="navMobileMenu">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="equipo.html" class="nav-link">El Equipo</a>
+        <a href="compromiso.html" class="nav-link">Compromiso</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="contacto.html" class="btn-nav">Diagnóstico estratégico →</a>
+      </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Blindaje Patrimonial · Bienestar Humano</p>
+        <h1 class="hero-title">
+          El nuevo paradigma<br />
+          en <em>gestión integral</em>
+        </h1>
+        <p class="hero-desc">
+          Un equipo multidisciplinario que estructura decisiones eficientes,
+          protege activos y garantiza expansión sostenible en el nuevo escenario
+          económico.
+        </p>
+        <div class="hero-actions">
+          <a href="contacto.html" class="btn-primary"
+            >Agendá tu diagnóstico <span>→</span></a
+          >
+          <a href="servicios.html" class="btn-ghost"
+            >Conocer servicios <span>→</span></a
+          >
+        </div>
+      </div>
+
+      <!-- NODE DIAGRAM -->
+      <div class="hero-diagram" id="heroDiagram">
+        <canvas id="nodeCanvas"></canvas>
+        <div class="node-center">
+          <span class="node-center-name">SAVINI</span>
+          <span class="node-center-sub">STUDIO</span>
+        </div>
+        <!-- Satellite nodes -->
+        <div
+          class="node-satellite"
+          data-angle="0"
+          data-label="LIDERAZGO"
+          data-icon="♟"
+        >
+          <div class="sat-circle"><span>♟</span></div>
+          <div class="sat-label">LIDERAZGO</div>
+        </div>
+        <div
+          class="node-satellite"
+          data-angle="51"
+          data-label="REAL ESTATE"
+          data-icon="🏗"
+        >
+          <div class="sat-circle"><span>🏗</span></div>
+          <div class="sat-label">REAL ESTATE</div>
+        </div>
+        <div
+          class="node-satellite"
+          data-angle="102"
+          data-label="CIBERSEGURIDAD"
+          data-icon="🛡"
+        >
+          <div class="sat-circle"><span>🛡</span></div>
+          <div class="sat-label">CIBERSEG.</div>
+        </div>
+        <div
+          class="node-satellite"
+          data-angle="153"
+          data-label="COUNSELING"
+          data-icon="◎"
+        >
+          <div class="sat-circle"><span>◎</span></div>
+          <div class="sat-label">COUNSELING</div>
+        </div>
+        <div
+          class="node-satellite"
+          data-angle="204"
+          data-label="IMPOSITIVA"
+          data-icon="📋"
+        >
+          <div class="sat-circle"><span>📋</span></div>
+          <div class="sat-label">IMPOSITIVA</div>
+        </div>
+        <div
+          class="node-satellite"
+          data-angle="255"
+          data-label="CONTABLE"
+          data-icon="📊"
+        >
+          <div class="sat-circle"><span>📊</span></div>
+          <div class="sat-label">CONTABLE</div>
+        </div>
+        <div
+          class="node-satellite"
+          data-angle="306"
+          data-label="NEXO ORG."
+          data-icon="🔗"
+        >
+          <div class="sat-circle"><span>🔗</span></div>
+          <div class="sat-label">NEXO ORG.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       DESAFÍO 
+  ═══════════════════════════════════════════ -->
+    <section class="pain section">
+      <div class="container">
+        <p class="section-eyebrow">El desafío actual</p>
+        <h2 class="section-title center">
+          ¿Solo le preocupa la<br />declaración jurada?
+        </h2>
+        <p class="section-subtitle center">
+          Estar pendiente únicamente del vencimiento fiscal le impide optimizar
+          su gestión integral y proyectar rentabilidad real.
+        </p>
+
+        <div class="pain-grid">
+          <div class="pain-card">
+            <div class="pain-icon">
+              <svg viewBox="0 0 40 40">
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="18"
+                  stroke="var(--green)"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <path
+                  d="M13 20h14M20 13v14"
+                  stroke="var(--green)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Gestión fragmentada</h3>
+            <p>
+              Áreas desconectadas que impiden una visión estratégica unificada
+              del negocio.
+            </p>
+          </div>
+          <div class="pain-card">
+            <div class="pain-icon">
+              <svg viewBox="0 0 40 40">
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="18"
+                  stroke="var(--green)"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <path
+                  d="M20 12v8l5 5"
+                  stroke="var(--green)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Inercia operativa</h3>
+            <p>
+              Persistir en esquemas inerciales impide alcanzar optimización en
+              el nuevo paradigma económico.
+            </p>
+          </div>
+          <div class="pain-card">
+            <div class="pain-icon">
+              <svg viewBox="0 0 40 40">
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="18"
+                  stroke="var(--green)"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <path
+                  d="M14 26l5-5 3 3 6-7"
+                  stroke="var(--green)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Sin blindaje patrimonial</h3>
+            <p>
+              Vulnerabilidades digitales, impositivas y legales que exponen el
+              patrimonio construido.
+            </p>
+          </div>
+          <div class="pain-card">
+            <div class="pain-icon">
+              <svg viewBox="0 0 40 40">
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="18"
+                  stroke="var(--green)"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="5"
+                  stroke="var(--green)"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <line
+                  x1="20"
+                  y1="2"
+                  x2="20"
+                  y2="10"
+                  stroke="var(--green)"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="20"
+                  y1="30"
+                  x2="20"
+                  y2="38"
+                  stroke="var(--green)"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="2"
+                  y1="20"
+                  x2="10"
+                  y2="20"
+                  stroke="var(--green)"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="30"
+                  y1="20"
+                  x2="38"
+                  y2="20"
+                  stroke="var(--green)"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+            <h3>Oportunidades perdidas</h3>
+            <p>
+              El mercado 2026–2031 exige decisiones estratégicas hoy. La falta
+              de visión limita el crecimiento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       SERVICIOS (acordeón)
+  ═══════════════════════════════════════════ -->
+    <section class="services section">
+      <div class="container">
+        <p class="section-eyebrow">La solución</p>
+        <h2 class="section-title center">
+          Savini Studio — <em>7 áreas, 1 ecosistema</em>
+        </h2>
+        <p class="section-subtitle center">
+          Un equipo multidisciplinario que cubre cada dimensión de su negocio.
+        </p>
+        <!--¡¡¡¡ Acordeon Aqui!!!! -->
+        <template>
+          <div class="accordion">
+            <div class="acc-item acc-open">
+              <button class="acc-header">
+                <span class="acc-icon">🤝</span>
+                <span class="acc-title">Liderazgo y Negociación</span>
+                <span class="acc-name">Dr. Claudio A. Savini</span>
+                <span class="acc-toggle"
+                  ><span class="acc-toggle-text">Ver</span
+                  ><span class="acc-toggle-arrow">▼</span></span
+                >
+              </button>
+              <div class="acc-body">
+                <p>
+                  Estructura con precisión los datos clave para garantizar
+                  decisiones eficientes bajo un rigor analítico absoluto.
+                  Transforma escenarios caóticos en esquemas de ejecución lógica
+                  que maximizan resultados.
+                </p>
+                <a href="servicios.html#liderazgo" class="acc-link"
+                  >Ver más →</a
+                >
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header">
+                <span class="acc-icon">🏢</span>
+                <span class="acc-title">Expansión y Rentabilidad</span>
+                <span class="acc-name">Matías Savini</span>
+                <span class="acc-toggle"
+                  ><span class="acc-toggle-text">Ver</span
+                  ><span class="acc-toggle-arrow">▼</span></span
+                >
+              </button>
+              <div class="acc-body">
+                <p>
+                  Valida rentabilidad y sostenibilidad de cada inversión con
+                  rigor técnico. El aliado clave para convertir oportunidades de
+                  Real Estate en éxitos plenamente blindados.
+                </p>
+                <a href="servicios.html#realestate" class="acc-link"
+                  >Ver más →</a
+                >
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header">
+                <span class="acc-icon">🛡️</span>
+                <span class="acc-title">Ciberseguridad y Blindaje</span>
+                <span class="acc-name">Sebastián Savini</span>
+                <span class="acc-toggle"
+                  ><span class="acc-toggle-text">Ver</span
+                  ><span class="acc-toggle-arrow">▼</span></span
+                >
+              </button>
+              <div class="acc-body">
+                <p>
+                  Crea aplicaciones que funcionan como bóvedas operativas para
+                  los activos tecnológicos. Transforma vulnerabilidades en
+                  fortalezas de vanguardia que preservan la continuidad del
+                  negocio.
+                </p>
+                <a href="servicios.html#ciber" class="acc-link">Ver más →</a>
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header">
+                <span class="acc-icon">🧘</span>
+                <span class="acc-title">Counseling & Mindfulness</span>
+                <span class="acc-name">Clr. Adriana L. Muñoz</span>
+                <span class="acc-toggle"
+                  ><span class="acc-toggle-text">Ver</span
+                  ><span class="acc-toggle-arrow">▼</span></span
+                >
+              </button>
+              <div class="acc-body">
+                <p>
+                  Facilita la resolución de tensiones y el equilibrio emocional
+                  como base del éxito empresarial. Garantiza expansión en un
+                  entorno de paz y estabilidad relacional.
+                </p>
+                <a href="servicios.html#counseling" class="acc-link"
+                  >Ver más →</a
+                >
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header">
+                <span class="acc-icon">📋</span>
+                <span class="acc-title">Gestión Laboral e Impositiva</span>
+                <span class="acc-name">Alicia C. Vaquero</span>
+                <span class="acc-toggle"
+                  ><span class="acc-toggle-text">Ver</span
+                  ><span class="acc-toggle-arrow">▼</span></span
+                >
+              </button>
+              <div class="acc-body">
+                <p>
+                  Garantiza cumplimiento milimétrico de obligaciones fiscales
+                  mediante herramientas expertas. Aporta precisión técnica
+                  absoluta y total seguridad jurídica ante entes reguladores.
+                </p>
+                <a href="servicios.html#impositiva" class="acc-link"
+                  >Ver más →</a
+                >
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header">
+                <span class="acc-icon">📊</span>
+                <span class="acc-title">Gestión Contable</span>
+                <span class="acc-name">Silvia Damiani</span>
+                <span class="acc-toggle"
+                  ><span class="acc-toggle-text">Ver</span
+                  ><span class="acc-toggle-arrow">▼</span></span
+                >
+              </button>
+              <div class="acc-body">
+                <p>
+                  Responsable de Estados Contables y auditoría de datos para
+                  reflejar la realidad del negocio. Garante de visibilidad
+                  financiera impecable mediante ratios e índices confiables.
+                </p>
+                <a href="servicios.html#contable" class="acc-link">Ver más →</a>
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header">
+                <span class="acc-icon">🔗</span>
+                <span class="acc-title">Nexo Organizacional</span>
+                <span class="acc-name">Lucia S. Barrientos</span>
+                <span class="acc-toggle"
+                  ><span class="acc-toggle-text">Ver</span
+                  ><span class="acc-toggle-arrow">▼</span></span
+                >
+              </button>
+              <div class="acc-body">
+                <p>
+                  Canaliza con precisión técnica cada requerimiento hacia el
+                  área correspondiente de forma inmediata. Asegura soluciones
+                  rápidas y efectivas para las necesidades del cliente.
+                </p>
+                <a href="servicios.html#nexo" class="acc-link">Ver más →</a>
+              </div>
+            </div>
+          </div>
+        </template>
+        <!-- TABS -->
+        <div class="tabs">
+          <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="0">
+              <span>🤝</span> Liderazgo
+            </button>
+            <button class="tab-btn" data-tab="1">
+              <span>🏢</span> Expansión
+            </button>
+            <button class="tab-btn" data-tab="2">
+              <span>🛡️</span> Ciberseguridad
+            </button>
+            <button class="tab-btn" data-tab="3">
+              <span>🧘</span> Counseling
+            </button>
+            <button class="tab-btn" data-tab="4">
+              <span>📑</span> Impositiva
+            </button>
+            <button class="tab-btn" data-tab="5">
+              <span>📊</span> Contable
+            </button>
+            <button class="tab-btn" data-tab="6"><span>🔗</span> Nexo</button>
+          </div>
+          <div class="tabs-content">
+            <div class="tab-panel active" data-panel="0">
+              <div class="tab-panel-inner">
+                <h3>Liderazgo y Negociación</h3>
+                <p class="tab-professional">
+                  Dr. Claudio A. Savini — Dirección General y Negociación
+                </p>
+                <p>
+                  Estructura con precisión los datos clave para garantizar
+                  decisiones eficientes bajo un rigor analítico absoluto.
+                  Transforma escenarios caóticos en esquemas de ejecución lógica
+                  que maximizan resultados.
+                </p>
+                <a href="servicios.html#liderazgo" class="acc-link"
+                  >Ver servicio completo →</a
+                >
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="1">
+              <div class="tab-panel-inner">
+                <h3>Expansión y Rentabilidad</h3>
+                <p class="tab-professional">
+                  Matías Savini — Gestión de Activos y Nuevos Negocios
+                </p>
+                <p>
+                  Valida rentabilidad y sostenibilidad de cada inversión con
+                  rigor técnico. El aliado clave para convertir oportunidades de
+                  Real Estate en éxitos plenamente blindados.
+                </p>
+                <a href="servicios.html#realestate" class="acc-link"
+                  >Ver servicio completo →</a
+                >
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="2">
+              <div class="tab-panel-inner">
+                <h3>Ciberseguridad y Blindaje</h3>
+                <p class="tab-professional">
+                  Sebastián Savini — Desarrollador y Protección Digital
+                </p>
+                <p>
+                  Crea aplicaciones que funcionan como bóvedas operativas para
+                  los activos tecnológicos. Transforma vulnerabilidades en
+                  fortalezas de vanguardia que preservan la continuidad del
+                  negocio.
+                </p>
+                <a href="servicios.html#ciber" class="acc-link"
+                  >Ver servicio completo →</a
+                >
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="3">
+              <div class="tab-panel-inner">
+                <h3>Counseling & Mindfulness</h3>
+                <p class="tab-professional">
+                  Clr. Adriana L. Muñoz — Bienestar Humano y Gestión de
+                  Conflictos
+                </p>
+                <p>
+                  Facilita la resolución de tensiones y el equilibrio emocional
+                  como base del éxito empresarial. Garantiza expansión en un
+                  entorno de paz y estabilidad relacional.
+                </p>
+                <a href="servicios.html#counseling" class="acc-link"
+                  >Ver servicio completo →</a
+                >
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="4">
+              <div class="tab-panel-inner">
+                <h3>Gestión Laboral e Impositiva</h3>
+                <p class="tab-professional">
+                  Alicia C. Vaquero — Especialista Impositiva y Previsional
+                </p>
+                <p>
+                  Garantiza cumplimiento milimétrico de obligaciones fiscales
+                  mediante herramientas expertas. Aporta precisión técnica
+                  absoluta y total seguridad jurídica ante entes reguladores.
+                </p>
+                <a href="servicios.html#impositiva" class="acc-link"
+                  >Ver servicio completo →</a
+                >
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="5">
+              <div class="tab-panel-inner">
+                <h3>Gestión Contable</h3>
+                <p class="tab-professional">
+                  Silvia Damiani — Transparencia Económica
+                </p>
+                <p>
+                  Responsable de Estados Contables y auditoría de datos para
+                  reflejar la realidad del negocio. Garante de visibilidad
+                  financiera impecable mediante ratios e índices confiables.
+                </p>
+                <a href="servicios.html#contable" class="acc-link"
+                  >Ver servicio completo →</a
+                >
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="6">
+              <div class="tab-panel-inner">
+                <h3>Nexo Organizacional</h3>
+                <p class="tab-professional">
+                  Lucia S. Barrientos — Comunicación Estratégica y Atención
+                </p>
+                <p>
+                  Canaliza con precisión técnica cada requerimiento hacia el
+                  área correspondiente de forma inmediata. Asegura soluciones
+                  rápidas y efectivas para las necesidades del cliente.
+                </p>
+                <a href="servicios.html#nexo" class="acc-link"
+                  >Ver servicio completo →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       NEXO / ECOSISTEMA
+  ═══════════════════════════════════════════ -->
+    <section class="nexo section">
+      <div class="container nexo-grid">
+        <div class="nexo-content">
+          <p class="section-eyebrow">Nexo organizacional</p>
+          <h2 class="section-title">
+            Todas las áreas<br />conectadas en<br />tiempo real
+          </h2>
+          <p class="nexo-desc">
+            Creamos un ecosistema multidisciplinario donde cada área comunica,
+            potencia y protege a las demás. Sin silos. Sin vacíos. Con un
+            respaldo integral que ninguna firma especializada puede ofrecer por
+            sí sola.
+          </p>
+          <a href="servicios.html" class="btn-primary"
+            >Conocé cómo funciona <span>→</span></a
+          >
+        </div>
+        <div class="nexo-visual">
+          <div class="nexo-diagram">
+            <div class="nexo-ring nexo-ring-outer"></div>
+            <div class="nexo-ring nexo-ring-mid"></div>
+            <div class="nexo-center-box">
+              <span>SAVINI</span>
+              <span>STUDIO</span>
+            </div>
+            <div class="nexo-dot" style="--a: 0deg"><span>Liderazgo</span></div>
+            <div class="nexo-dot" style="--a: 51deg">
+              <span>Real Estate</span>
+            </div>
+            <div class="nexo-dot" style="--a: 102deg">
+              <span>Ciberseg.</span>
+            </div>
+            <div class="nexo-dot" style="--a: 153deg">
+              <span>Counseling</span>
+            </div>
+            <div class="nexo-dot" style="--a: 204deg">
+              <span>Impositiva</span>
+            </div>
+            <div class="nexo-dot" style="--a: 255deg">
+              <span>Contable</span>
+            </div>
+            <div class="nexo-dot" style="--a: 306deg">
+              <span>Nexo Org.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       COMPROMISO (3 pilares)
+  ═══════════════════════════════════════════ -->
+    <section class="compromiso section">
+      <div class="container">
+        <p class="section-eyebrow">El compromiso Savini</p>
+        <h2 class="section-title center">Tres pilares que nos definen</h2>
+
+        <div class="comp-grid">
+          <div class="comp-card">
+            <div class="comp-icon-wrap">◆</div>
+            <h3>Lealtad</h3>
+            <p>
+              Precios promocionales y descuentos exclusivos por años de
+              acompañamiento. Su confianza, nuestro mayor activo.
+            </p>
+          </div>
+          <div class="comp-card comp-card--featured">
+            <div class="comp-icon-wrap">⚡</div>
+            <h3>Evolución</h3>
+            <p>
+              Acceso a servicios de Ciberseguridad que trascienden lo
+              tradicional. Siempre a la vanguardia del nuevo paradigma
+              económico.
+            </p>
+          </div>
+          <div class="comp-card">
+            <div class="comp-icon-wrap">🛡</div>
+            <h3>Blindaje</h3>
+            <p>
+              Máxima seguridad patrimonial con respaldo multidisciplinario de
+              expertos. Su patrimonio protegido en todas sus dimensiones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       ESCENARIOS CTA
+  ═══════════════════════════════════════════ -->
+    <section class="cta-section">
+      <div class="cta-inner">
+        <div class="cta-text">
+          <h2>Agendá hoy su reunión de diagnóstico estratégico</h2>
+          <p>
+            Descubrí cómo Savini Studio puede blindar y potenciar su negocio en
+            el escenario 2026–2031.
+          </p>
+        </div>
+        <a href="contacto.html" class="btn-primary btn-cta"
+          >Solicitar diagnóstico <span>→</span></a
+        >
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div
+            class="nav-logo-main"
+            style="font-size: 1.1rem; letter-spacing: 0.15em"
+          >
+            SAVINI STUDIO
+          </div>
+          <p class="footer-tagline">
+            "Innovación en Blindaje Patrimonial<br />y Bienestar Humano"
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="servicios.html">Servicios</a>
+          <a href="equipo.html">El Equipo</a>
+          <a href="compromiso.html">Compromiso</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://wa.me/5491167197817">📱 +54 9 11 6719 7817</a>
+          <a href="mailto:consultas@estudiosavini.com.ar"
+            >✉ consultas@estudiosavini.com.ar</a
+          >
+        </div>
+      </div>
+      <div class="footer-copy">© Savini Studio 2026 · Evolución de Activos</div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
