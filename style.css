@@ -1,6 +1,5 @@
 /* ═══════════════════════════════════════════
    SAVINI STUDIO — style.css
-   Azul profundo · Verde petróleo · Blanco
 ═══════════════════════════════════════════ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
@@ -19,7 +18,7 @@
   --green-dim: rgba(26, 158, 143, 0.15);
   --green-glow:rgba(26, 158, 143, 0.06);
 
-  /* Texto */
+  /* Textos */
   --white:     #eef2f7;
   --gray:      #7a8faa;
   --gray2:     #3a4f6a;
@@ -35,7 +34,7 @@
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ── Reset & Base ── */
+/* ── Reset ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; font-size: 17px; }
 body {
@@ -245,7 +244,7 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
 }
 
-/* Mobile menu panel */
+/* Mobile menu */
 .nav-mobile-menu {
   display: none;
   flex-direction: column;
@@ -346,7 +345,7 @@ img { display: block; max-width: 100%; }
 }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 
-/* ── Node Diagram ── */
+/* ── Nodo Diagrama ── */
 .hero-diagram {
   position: relative;
   z-index: 2;
@@ -670,16 +669,57 @@ img { display: block; max-width: 100%; }
 .comp-card p { font-size: 0.85rem; line-height: 1.8; color: var(--gray); }
 
 /* ══════════════════════════════════════
-   CTA
+   GARANTÍA
 ══════════════════════════════════════ */
-.cta-section { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 3rem 2rem; }
-.cta-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 2.5rem; }
-.cta-icon { width: 60px; height: 60px; flex-shrink: 0; }
-.cta-icon svg { width: 100%; height: 100%; }
-.cta-text { flex: 1; }
-.cta-text h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--white); margin-bottom: 0.4rem; }
-.cta-text p { font-size: 0.85rem; color: var(--gray); }
-.btn-cta { flex-shrink: 0; }
+.garantia {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.garantia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 5rem;
+  align-items: center;
+}
+.garantia-left { text-align: center; }
+.garantia-numero {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 12vw, 9rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.garantia-sub {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.garantia-right h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+.garantia-right p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--gray);
+  margin-bottom: 0.8rem;
+}
+.garantia-right p:last-of-type { margin-bottom: 2rem; }
+
+@media (max-width: 768px) {
+  .garantia-grid { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+}
+
+
 
 /* ══════════════════════════════════════
    FOOTER
@@ -696,7 +736,7 @@ img { display: block; max-width: 100%; }
 .footer-copy { text-align: center; font-size: 0.7rem; letter-spacing: 0.1em; color: var(--gray2); padding-top: 1.5rem; border-top: 1px solid var(--border); }
 
 /* ══════════════════════════════════════
-   ANIMATIONS
+   ANIMACIONES
 ══════════════════════════════════════ */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -740,7 +780,7 @@ img { display: block; max-width: 100%; }
   .node-center { width: 76px; height: 76px; }
 }
 
-/* TABS */
+
 /* ══════════════════════════════════════
    TABS SERVICIOS
 ══════════════════════════════════════ */

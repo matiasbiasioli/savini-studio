@@ -2,7 +2,7 @@
    SAVINI STUDIO — main.js
 ═══════════════════════════════════════════ */
 
-/* ── 1. NAV BURGER (mobile) ── */
+/*  NAV BURGER (mobile) */
 const burger = document.getElementById('navBurger');
 const mobileMenu = document.getElementById('navMobileMenu');
 
@@ -22,7 +22,7 @@ if (burger && mobileMenu) {
   });
 }
 
-/* ── 2. NODE DIAGRAM (Canvas) ── */
+/*  NODE DIAGRAM (Canvas) */
 function initNodeDiagram() {
   const canvas = document.getElementById('nodeCanvas');
   if (!canvas) return;
@@ -131,7 +131,7 @@ function initNodeDiagram() {
   window.addEventListener('resize', () => { resize(); });
 }
 
-/* ── 3. SATELLITE NODE POSITIONING ── */
+/* ── SATELLITE NODE POSITIONING ── */
 function positionSatellites() {
   const diagram = document.getElementById('heroDiagram');
   if (!diagram) return;
@@ -152,7 +152,7 @@ function positionSatellites() {
   });
 }
 
-/* ── 4. SCROLL REVEAL ── */
+/* ── SCROLL REVEAL ── */
 function initScrollReveal() {
   const els = document.querySelectorAll(
     '.pain-card, .service-card, .comp-card, .nexo-content, .nexo-visual'
@@ -173,7 +173,7 @@ function initScrollReveal() {
   els.forEach(el => observer.observe(el));
 }
 
-/* ── 5. NAV ACTIVE LINK (scroll spy lite) ── */
+/* ── NAV ACTIVE LINK (scroll spy lite) */
 function initNavSpy() {
   const sections = document.querySelectorAll('section[id]');
   const links = document.querySelectorAll('.nav-link');
@@ -192,7 +192,7 @@ function initNavSpy() {
   sections.forEach(s => observer.observe(s));
 }
 
-/* ── 5. ACORDEÓN ── */
+/* ──  ACORDEÓN ── */
 function initAccordion() {
   const items = document.querySelectorAll('.acc-item');
   if (!items.length) return;
@@ -222,7 +222,7 @@ function initAccordion() {
   });
 }
 
-/* ── 5. TABS ── */
+/* ── TABS ── */
 function initTabs() {
   const btns = document.querySelectorAll('.tab-btn');
   const panels = document.querySelectorAll('.tab-panel');
@@ -239,7 +239,7 @@ function initTabs() {
   });
 }
 
-/* ── 6. INIT ── */
+/* ── INIT ── */
 document.addEventListener('DOMContentLoaded', () => {
   positionSatellites();
   initNodeDiagram();
