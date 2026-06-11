@@ -50,8 +50,8 @@ function initNodeDiagram() {
   const GREEN_FAINT= 'rgba(29,184,122,0.06)';
 
   // Particles
-  const particles = Array.from({ length: 7 }, (_, i) => ({
-    angle: (i / 7) * Math.PI * 2,
+  const particles = Array.from({ length: 8 }, (_, i) => ({
+    angle: (i / 8) * Math.PI * 2,
     speed: 0.004 + Math.random() * 0.003,
     progress: Math.random(),
     orbitIndex: i,
@@ -86,7 +86,7 @@ function initNodeDiagram() {
     ctx.fill();
 
     // Spokes + particles
-    const angles = [0, 51, 102, 153, 204, 255, 306].map(d => (d - 90) * Math.PI / 180);
+    const angles = [0, 45, 90, 135, 180, 225, 270, 315].map(d => (d - 90) * Math.PI / 180);
 
     angles.forEach((angle, i) => {
       const sx = cx + Math.cos(angle) * radius;
@@ -137,7 +137,7 @@ function positionSatellites() {
   if (!diagram) return;
 
   const sats = diagram.querySelectorAll('.node-satellite');
-  const angles = [0, 51, 102, 153, 204, 255, 306];
+  const angles = [0, 45, 90, 135, 180, 225, 270, 315];
 
   sats.forEach((sat, i) => {
     const angleDeg = angles[i] - 90;
