@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Savini Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrapper">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-text">
+          <span class="nav-logo-main">SAVINI STUDIO</span>
+          <span class="nav-logo-sub">Evolución de Activos</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+        <li><a href="equipo.html" class="nav-link">El Equipo</a></li>
+        <li><a href="compromiso.html" class="nav-link">Compromiso</a></li>
+        <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+      </ul>
+      <a href="contacto.html" class="btn-nav">Diagnóstico estratégico <span>→</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="servicios.html" class="nav-link">Servicios</a>
+      <a href="equipo.html" class="nav-link">El Equipo</a>
+      <a href="compromiso.html" class="nav-link">Compromiso</a>
+      <a href="contacto.html" class="nav-link active">Contacto</a>
+      <a href="contacto.html" class="btn-nav">Diagnóstico estratégico →</a>
+    </div>
+  </header>
+
+  <!-- HERO + FORMULARIO -->
+  <section class="ctc-main">
+    <div class="ctc-main-inner">
+
+      <!-- Columna izquierda -->
+      <div class="ctc-left">
+        <p class="section-eyebrow">Contacto</p>
+        <h1 class="ctc-title">Hablemos de<br/><em>su proyecto</em></h1>
+        <p class="ctc-desc">Estamos listos para acompañarle a blindar y potenciar su negocio. Agendá hoy su reunión de diagnóstico estratégico sin cargo.</p>
+
+        <div class="ctc-info">
+          <div class="ctc-info-item">
+            <div class="ctc-info-icon">✉</div>
+            <div>
+              <div class="ctc-info-label">Email</div>
+              <a href="mailto:consultas@estudiosavini.com.ar" class="ctc-info-value">consultas@estudiosavini.com.ar</a>
+            </div>
+          </div>
+          <div class="ctc-info-item">
+            <div class="ctc-info-icon">📱</div>
+            <div>
+              <div class="ctc-info-label">WhatsApp</div>
+              <a href="https://wa.me/5491167197817" target="_blank" class="ctc-info-value">+54 9 11 6719 7817</a>
+            </div>
+          </div>
+          <div class="ctc-info-item">
+            <div class="ctc-info-icon">📍</div>
+            <div>
+              <div class="ctc-info-label">Ubicación</div>
+              <span class="ctc-info-value">Martínez, Provincia de Buenos Aires</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ctc-social">
+          <p class="ctc-social-label">Seguinos en redes</p>
+          <div class="ctc-social-links">
+            <a href="#" class="ctc-social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="ctc-social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="ctc-social-btn" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha — Formulario -->
+      <div class="ctc-right">
+        <div class="ctc-form-wrap">
+          <form class="ctc-form" id="ctcForm">
+            <div class="ctc-field">
+              <input type="text" placeholder="Nombre" required />
+              <span class="ctc-field-icon">👤</span>
+            </div>
+            <div class="ctc-field">
+              <input type="text" placeholder="Empresa" />
+              <span class="ctc-field-icon">🏢</span>
+            </div>
+            <div class="ctc-field">
+              <input type="email" placeholder="Email" required />
+              <span class="ctc-field-icon">✉</span>
+            </div>
+            <div class="ctc-field">
+              <input type="tel" placeholder="Teléfono" />
+              <span class="ctc-field-icon">📱</span>
+            </div>
+            <div class="ctc-field">
+              <select>
+                <option value="" disabled selected>Servicio de interés</option>
+                <option>Liderazgo y Negociación</option>
+                <option>Expansión y Rentabilidad</option>
+                <option>Ciberseguridad y Blindaje</option>
+                <option>Counseling & Mindfulness</option>
+                <option>Gestión Laboral e Impositiva</option>
+                <option>Gestión Contable</option>
+                <option>Recursos Humanos</option>
+                <option>Nexo Organizacional</option>
+                <option>Diagnóstico integral</option>
+              </select>
+              <span class="ctc-field-icon">📋</span>
+            </div>
+            <div class="ctc-field ctc-field--textarea">
+              <textarea placeholder="Mensaje" rows="4"></textarea>
+            </div>
+            <button type="submit" class="ctc-submit">
+              Enviar mensaje <span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <div class="ctc-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.5!2d-58.5077!3d-34.4897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6d9c5b5b5b5%3A0x0!2sMart%C3%ADnez%2C+Provincia+de+Buenos+Aires!5e0!3m2!1ses!2sar!4v1"
+      width="100%"
+      height="100%"
+      style="border:0; filter: invert(90%) hue-rotate(180deg) saturate(0.8);"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo-main" style="font-size:1.1rem;letter-spacing:0.15em;">SAVINI STUDIO</div>
+        <p class="footer-tagline">"Innovación en Blindaje Patrimonial<br/>y Bienestar Humano"</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="equipo.html">El Equipo</a>
+        <a href="compromiso.html">Compromiso</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-contact">
+        <a href="https://wa.me/5491167197817">📱 +54 9 11 6719 7817</a>
+        <a href="mailto:consultas@estudiosavini.com.ar">✉ consultas@estudiosavini.com.ar</a>
+      </div>
+    </div>
+    <div class="footer-copy">© Savini Studio 2026 · Evolución de Activos</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contacto.js"></script>
+</body>
+</html>

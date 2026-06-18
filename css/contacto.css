@@ -1,0 +1,222 @@
+/* ══════════════════════════════════════
+   CONTACTO — contacto.css
+══════════════════════════════════════ */
+
+/* Sección principal */
+.ctc-main {
+  padding-top: calc(68px + 5rem);
+  padding-bottom: 5rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background: var(--bg);
+}
+.ctc-main-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* Columna izquierda */
+.ctc-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.08;
+  margin-bottom: 1.2rem;
+  color: var(--white);
+}
+.ctc-title em { font-style: italic; color: var(--green); }
+.ctc-desc {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--gray);
+  margin-bottom: 2.5rem;
+}
+
+/* Info de contacto */
+.ctc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.ctc-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.ctc-info-icon {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: var(--green-dim);
+  border: 1px solid var(--border2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.ctc-info-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 0.2rem;
+}
+.ctc-info-value {
+  font-size: 0.9rem;
+  color: var(--gray);
+  transition: color var(--transition);
+}
+a.ctc-info-value:hover { color: var(--white); }
+
+/* Redes sociales */
+.ctc-social-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+.ctc-social-links {
+  display: flex;
+  gap: 0.8rem;
+}
+.ctc-social-btn {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+.ctc-social-btn svg { width: 18px; height: 18px; }
+.ctc-social-btn:hover {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-dim);
+}
+
+/* Formulario */
+.ctc-form-wrap {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+}
+.ctc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ctc-field {
+  position: relative;
+}
+.ctc-field input,
+.ctc-field select,
+.ctc-field textarea {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 2.8rem 0.9rem 1.1rem;
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  color: var(--white);
+  outline: none;
+  transition: border-color var(--transition);
+  appearance: none;
+}
+.ctc-field input::placeholder,
+.ctc-field textarea::placeholder {
+  color: var(--gray2);
+}
+.ctc-field select {
+  color: var(--gray2);
+  cursor: pointer;
+}
+.ctc-field select option { background: var(--bg3); color: var(--white); }
+.ctc-field input:focus,
+.ctc-field select:focus,
+.ctc-field textarea:focus {
+  border-color: var(--green);
+}
+.ctc-field-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  opacity: 0.4;
+  pointer-events: none;
+}
+.ctc-field--textarea .ctc-field-icon { top: 1rem; transform: none; }
+.ctc-field textarea { resize: vertical; min-height: 110px; }
+
+.ctc-submit {
+  width: 100%;
+  background: var(--green);
+  color: var(--bg);
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+  transition: background var(--transition), transform var(--transition);
+}
+.ctc-submit:hover { background: var(--green2); transform: translateY(-1px); }
+.ctc-submit span { transition: transform var(--transition); }
+.ctc-submit:hover span { transform: translateX(4px); }
+
+/* Mensaje de éxito */
+.ctc-success {
+  display: none;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.ctc-success.show { display: block; }
+.ctc-success-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.ctc-success h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+.ctc-success p { font-size: 0.9rem; color: var(--gray); }
+
+/* Mapa */
+.ctc-map {
+  width: 100%;
+  height: 420px;
+  border-top: 1px solid var(--border);
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .ctc-main-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .ctc-main { padding-left: 2rem; padding-right: 2rem; }
+  .ctc-map { height: 280px; }
+}

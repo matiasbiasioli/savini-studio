@@ -1,0 +1,206 @@
+/* ══════════════════════════════════════
+   SERVICIOS — servicios.css
+══════════════════════════════════════ */
+
+/* Hero */
+.srv-hero {
+  padding-top: calc(68px + 6rem);
+  padding-bottom: 6rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  text-align: center;
+}
+.srv-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 0%, black 20%, transparent 80%);
+  pointer-events: none;
+}
+.srv-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.srv-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 1.2rem;
+  color: var(--white);
+}
+.srv-hero-title em { font-style: italic; color: var(--green); }
+.srv-hero-desc {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--gray);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Índice rápido */
+.srv-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  position: sticky;
+  top: 68px;
+  z-index: 100;
+}
+.srv-index a {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+  padding: 1rem 1.2rem;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+  white-space: nowrap;
+}
+.srv-index a:hover {
+  color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+/* Lista de servicios */
+.srv-list { background: var(--bg); }
+
+.srv-item {
+  border-bottom: 1px solid var(--border);
+  padding: 5rem 5vw;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.srv-item.visible { opacity: 1; transform: translateY(0); }
+.srv-item--alt { background: var(--bg2); }
+
+.srv-item-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* Columna izquierda */
+.srv-item-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.srv-num {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--gray2);
+  letter-spacing: 0.15em;
+}
+.srv-icon {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0.5rem 0;
+}
+.srv-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
+}
+.srv-professional {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0.4rem;
+}
+.srv-pro-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--green);
+}
+.srv-pro-role {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--gray);
+}
+
+/* Columna derecha */
+.srv-item-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.srv-item-right p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--gray);
+}
+.srv-item-right strong {
+  color: var(--white);
+  font-weight: 500;
+}
+
+/* CTA final */
+.srv-cta {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  padding: 4rem 2rem;
+}
+.srv-cta-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.srv-cta-inner .btn-primary {
+  width: auto;
+  align-self: center;
+  flex-shrink: 0;
+}
+.srv-cta-text h2 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+.srv-cta-text p {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .srv-item-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .srv-item { padding: 3.5rem 2rem; }
+  .srv-index { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; }
+  .srv-cta-inner { flex-direction: column; text-align: center; }
+}
