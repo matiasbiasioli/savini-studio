@@ -1,277 +1,410 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servicios — Savini Studio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/servicios.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios — Savini Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/servicios.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="nav-wrapper">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-text">
+            <span class="nav-logo-main">SAVINI STUDIO</span>
+            <span class="nav-logo-sub">Evolución de Activos</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li>
+            <a href="servicios.html" class="nav-link active">Servicios</a>
+          </li>
+          <li><a href="equipo.html" class="nav-link">El Equipo</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="contacto.html" class="btn-nav"
+          >Diagnóstico estratégico <span>→</span></a
+        >
+        <button class="nav-burger" id="navBurger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="nav-mobile-menu" id="navMobileMenu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="servicios.html" class="nav-link active">Servicios</a>
+        <a href="equipo.html" class="nav-link">El Equipo</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="contacto.html" class="btn-nav">Diagnóstico estratégico →</a>
+      </div>
+    </header>
 
-  <!-- NAV -->
-  <header class="nav-wrapper">
-    <nav class="nav">
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-text">
-          <span class="nav-logo-main">SAVINI STUDIO</span>
-          <span class="nav-logo-sub">Evolución de Activos</span>
-        </div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Inicio</a></li>
-        <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
-        <li><a href="equipo.html" class="nav-link">El Equipo</a></li>
-        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-      </ul>
-      <a href="contacto.html" class="btn-nav">Diagnóstico estratégico <span>→</span></a>
-      <button class="nav-burger" id="navBurger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+    <!-- HERO -->
+    <section class="srv-hero">
+      <div class="srv-hero-bg"></div>
+      <div class="srv-hero-content">
+        <p class="section-eyebrow">Lo que hacemos</p>
+        <h1 class="srv-hero-title">10 áreas,<br /><em>1 ecosistema</em></h1>
+        <p class="srv-hero-desc">
+          Cada servicio está diseñado para actuar de forma independiente o
+          integrada.
+        </p>
+      </div>
+    </section>
+
+    <!-- ÍNDICE RÁPIDO -->
+    <nav class="srv-index">
+      <a href="#liderazgo">Liderazgo</a>
+      <a href="#realestate">Real Estate</a>
+      <a href="#ciber">Ciberseguridad</a>
+      <a href="#counseling">Counseling</a>
+      <a href="#impositiva">Impositiva</a>
+      <a href="#contable">Contable</a>
+      <a href="#tango">Tango CRM</a>
+      <a href="#web">Web</a>
+      <a href="#rrhh">RR.HH.</a>
+      <a href="#nexo">Nexo</a>
     </nav>
-    <div class="nav-mobile-menu" id="navMobileMenu">
-      <a href="index.html" class="nav-link">Inicio</a>
-      <a href="servicios.html" class="nav-link active">Servicios</a>
-      <a href="equipo.html" class="nav-link">El Equipo</a>
-      <a href="contacto.html" class="nav-link">Contacto</a>
-      <a href="contacto.html" class="btn-nav">Diagnóstico estratégico →</a>
+
+    <!-- SERVICIOS -->
+    <div class="srv-list">
+      <!-- 01 -->
+      <section class="srv-item" id="liderazgo">
+        <div class="srv-item-inner">
+          <div class="srv-item-left">
+            <div class="srv-num">01</div>
+            <div class="srv-icon">🤝</div>
+            <h2 class="srv-title">Liderazgo y Negociación</h2>
+            <div class="srv-professional">
+              <span class="srv-pro-name">Dr. Claudio A. Savini</span>
+              <span class="srv-pro-role">Dirección General y Negociación</span>
+            </div>
+          </div>
+          <div class="srv-item-right">
+            <p>
+              Estructura con precisión los datos clave para garantizar
+              <strong
+                >decisiones eficientes bajo un rigor analítico absoluto</strong
+              >. Transforma escenarios caóticos en esquemas de ejecución lógica
+              que maximizan resultados.
+            </p>
+            <a href="contacto.html" class="btn-primary"
+              >Consultar este servicio <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="srv-item srv-item--alt" id="realestate">
+        <div class="srv-item-inner">
+          <div class="srv-item-left">
+            <div class="srv-num">02</div>
+            <div class="srv-icon">🏢</div>
+            <h2 class="srv-title">Expansión y Rentabilidad</h2>
+            <div class="srv-professional">
+              <span class="srv-pro-name">Matías Savini</span>
+              <span class="srv-pro-role"
+                >Gestión de Activos y Nuevos Negocios</span
+              >
+            </div>
+          </div>
+          <div class="srv-item-right">
+            <p>
+              Válida rentabilidad y sostenibilidad de cada inversión con rigor
+              técnico.
+              <strong
+                >El aliado clave para convertir oportunidades de Real Estate en
+                éxitos plenamente blindados</strong
+              >.
+            </p>
+            <a href="contacto.html" class="btn-primary"
+              >Consultar este servicio <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 -->
+      <section class="srv-item" id="ciber">
+        <div class="srv-item-inner">
+          <div class="srv-item-left">
+            <div class="srv-num">03</div>
+            <div class="srv-icon">🛡️</div>
+            <h2 class="srv-title">Ciberseguridad y Blindaje</h2>
+            <div class="srv-professional">
+              <span class="srv-pro-name">Sebastián Savini</span>
+              <span class="srv-pro-role"
+                >Desarrollador y Protección Digital</span
+              >
+            </div>
+          </div>
+          <div class="srv-item-right">
+            <p>
+              Crea aplicaciones que funcionan como
+              <strong>bóvedas operativas para los activos tecnológicos</strong>.
+              Transforma vulnerabilidades en fortalezas de vanguardia que
+              preservan la continuidad del negocio.
+            </p>
+            <a href="contacto.html" class="btn-primary"
+              >Consultar este servicio <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 -->
+      <section class="srv-item srv-item--alt" id="counseling">
+        <div class="srv-item-inner">
+          <div class="srv-item-left">
+            <div class="srv-num">04</div>
+            <div class="srv-icon">🧘</div>
+            <h2 class="srv-title">Counseling & Mindfulness</h2>
+            <div class="srv-professional">
+              <span class="srv-pro-name">Clr. Adriana L. Muñoz</span>
+              <span class="srv-pro-role"
+                >Bienestar Humano y Gestión de Conflictos</span
+              >
+            </div>
+          </div>
+          <div class="srv-item-right">
+            <p>
+              Facilita la resolución de tensiones y el equilibrio emocional como
+              <strong>base del éxito empresarial</strong>. Garantiza expansión
+              en un entorno de paz y estabilidad relacional.
+            </p>
+            <a href="contacto.html" class="btn-primary"
+              >Consultar este servicio <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 -->
+      <section class="srv-item" id="impositiva">
+        <div class="srv-item-inner">
+          <div class="srv-item-left">
+            <div class="srv-num">05</div>
+            <div class="srv-icon">📑</div>
+            <h2 class="srv-title">Gestión Laboral e Impositiva</h2>
+            <div class="srv-professional">
+              <span class="srv-pro-name">Alicia C. Vaquero</span>
+              <span class="srv-pro-role"
+                >Especialista Impositiva y Previsional</span
+              >
+            </div>
+          </div>
+          <div class="srv-item-right">
+            <p>
+              Garantiza cumplimiento milimétrico de obligaciones fiscales
+              mediante herramientas expertas. Aporta
+              <strong
+                >precisión técnica absoluta y total seguridad jurídica</strong
+              >
+              ante entes reguladores.
+            </p>
+            <a href="contacto.html" class="btn-primary"
+              >Consultar este servicio <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 -->
+      <section class="srv-item srv-item--alt" id="contable">
+        <div class="srv-item-inner">
+          <div class="srv-item-left">
+            <div class="srv-num">06</div>
+            <div class="srv-icon">📊</div>
+            <h2 class="srv-title">Gestión Contable</h2>
+            <div class="srv-professional">
+              <span class="srv-pro-name">Silvia Damiani</span>
+              <span class="srv-pro-role">Transparencia Económica</span>
+            </div>
+          </div>
+          <div class="srv-item-right">
+            <p>
+              Responsable de Estados Contables y auditoría de datos para
+              reflejar la realidad del negocio.
+              <strong>Garante de visibilidad financiera impecable</strong>
+              mediante ratios e índices confiables.
+            </p>
+            <a href="contacto.html" class="btn-primary"
+              >Consultar este servicio <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 tango -->
+      <section class="srv-item" id="tango">
+        <div class="srv-item-inner">
+          <div class="srv-item-left">
+            <div class="srv-num">07</div>
+            <div class="srv-icon">⚙️</div>
+            <h2 class="srv-title">Tango Gestión Gold — CRM GO</h2>
+            <div class="srv-professional">
+              <span class="srv-pro-name">Giuliana A. Miniace</span>
+              <span class="srv-pro-role"
+                >Optimización de Procesos Operativos</span
+              >
+            </div>
+          </div>
+          <div class="srv-item-right">
+            <p>
+              Incluimos <strong>Inteligencia Artificial</strong> para alinear
+              tecnología y flujos de datos para simplificar tareas y potenciar
+              productividad organizacional. Transforma la complejidad en un
+              <strong>sistema ágil y rentable a medida del cliente</strong>.
+            </p>
+            <a href="contacto.html" class="btn-primary"
+              >Consultar este servicio <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- 08 web -->
+
+      <section class="srv-item srv-item--alt" id="web">
+        <div class="srv-item-inner">
+          <div class="srv-item-left">
+            <div class="srv-num">08</div>
+            <div class="srv-icon">💻</div>
+            <h2 class="srv-title">Diseño y Desarrollo Web</h2>
+            <div class="srv-professional">
+              <span class="srv-pro-name">Matías Biasioli</span>
+              <span class="srv-pro-role">Desarrollo Digital</span>
+            </div>
+          </div>
+          <div class="srv-item-right">
+            <p>
+              Diseño y desarrollo sitios web que combinan
+              <strong
+                >identidad visual, experiencia de usuario y tecnología
+                moderna</strong
+              >
+              para construir una presencia digital profesional que refleje el
+              valor real del negocio.
+            </p>
+            <a href="contacto.html" class="btn-primary"
+              >Consultar este servicio <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 -->
+      <section class="srv-item" id="rrhh">
+        <div class="srv-item-inner">
+          <div class="srv-item-left">
+            <div class="srv-num">09</div>
+            <div class="srv-icon">🧑‍💼</div>
+            <h2 class="srv-title">Recursos Humanos</h2>
+            <div class="srv-professional">
+              <span class="srv-pro-name">Lic. Karen A. Nervi</span>
+              <span class="srv-pro-role">Desarrolladora de Estrategias</span>
+            </div>
+          </div>
+          <div class="srv-item-right">
+            <p>
+              Lidera y optimiza el talento mediante procesos de selección y
+              motivación. Su propósito es
+              <strong
+                >alinear las capacidades del personal con los objetivos
+                estratégicos</strong
+              >
+              de la organización, impulsando así su máximo rendimiento.
+            </p>
+            <a href="contacto.html" class="btn-primary"
+              >Consultar este servicio <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 -->
+      <section class="srv-item srv-item--alt" id="nexo">
+        <div class="srv-item-inner">
+          <div class="srv-item-left">
+            <div class="srv-num">10</div>
+            <div class="srv-icon">🔗</div>
+            <h2 class="srv-title">Nexo Organizacional</h2>
+            <div class="srv-professional">
+              <span class="srv-pro-name">Lucia S. Barrientos</span>
+              <span class="srv-pro-role"
+                >Comunicación Estratégica y Atención</span
+              >
+            </div>
+          </div>
+          <div class="srv-item-right">
+            <p>
+              Canaliza con precisión técnica cada requerimiento hacia el área
+              correspondiente de forma inmediata.
+              <strong>Asegura soluciones rápidas y efectivas</strong> para las
+              necesidades del cliente.
+            </p>
+            <a href="contacto.html" class="btn-primary"
+              >Consultar este servicio <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
     </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="srv-hero">
-    <div class="srv-hero-bg"></div>
-    <div class="srv-hero-content">
-      <p class="section-eyebrow">Lo que hacemos</p>
-      <h1 class="srv-hero-title">8 áreas,<br/><em>1 ecosistema</em></h1>
-      <p class="srv-hero-desc">Cada servicio está diseñado para actuar de forma independiente o integrada.</p>
-    </div>
-  </section>
-
-  <!-- ÍNDICE RÁPIDO -->
-  <nav class="srv-index">
-    <a href="#liderazgo">Liderazgo</a>
-    <a href="#realestate">Real Estate</a>
-    <a href="#ciber">Ciberseguridad</a>
-    <a href="#counseling">Counseling</a>
-    <a href="#impositiva">Impositiva</a>
-    <a href="#contable">Contable</a>
-    <a href="#tango">Tango CRM</a>
-    <a href="#rrhh">RR.HH.</a>
-    <a href="#nexo">Nexo</a>
-  </nav>
-
-  <!-- SERVICIOS -->
-  <div class="srv-list">
-
-    <!-- 01 -->
-    <section class="srv-item" id="liderazgo">
-      <div class="srv-item-inner">
-        <div class="srv-item-left">
-          <div class="srv-num">01</div>
-          <div class="srv-icon">🤝</div>
-          <h2 class="srv-title">Liderazgo y Negociación</h2>
-          <div class="srv-professional">
-            <span class="srv-pro-name">Dr. Claudio A. Savini</span>
-            <span class="srv-pro-role">Dirección General y Negociación</span>
-          </div>
+    <!-- CTA -->
+    <section class="srv-cta">
+      <div class="srv-cta-inner">
+        <div class="srv-cta-text">
+          <h2>¿No sabés por dónde empezar?</h2>
+          <p>
+            En el diagnóstico estratégico identificamos qué áreas necesita su
+            negocio. Sin cargo, sin compromiso.
+          </p>
         </div>
-        <div class="srv-item-right">
-          <p>Estructura con precisión los datos clave para garantizar <strong>decisiones eficientes bajo un rigor analítico absoluto</strong>. Transforma escenarios caóticos en esquemas de ejecución lógica que maximizan resultados.</p>
-          <a href="contacto.html" class="btn-primary">Consultar este servicio <span>→</span></a>
-        </div>
+        <a href="contacto.html" class="btn-primary"
+          >Solicitar diagnóstico gratuito <span>→</span></a
+        >
       </div>
     </section>
 
-    <!-- 02 -->
-    <section class="srv-item srv-item--alt" id="realestate">
-      <div class="srv-item-inner">
-        <div class="srv-item-left">
-          <div class="srv-num">02</div>
-          <div class="srv-icon">🏢</div>
-          <h2 class="srv-title">Expansión y Rentabilidad</h2>
-          <div class="srv-professional">
-            <span class="srv-pro-name">Matías Savini</span>
-            <span class="srv-pro-role">Gestión de Activos y Nuevos Negocios</span>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div
+            class="nav-logo-main"
+            style="font-size: 1.1rem; letter-spacing: 0.15em"
+          >
+            SAVINI STUDIO
           </div>
+          <p class="footer-tagline">
+            "Innovación en Blindaje Patrimonial<br />y Bienestar Humano"
+          </p>
         </div>
-        <div class="srv-item-right">
-          <p>Válida rentabilidad y sostenibilidad de cada inversión con rigor técnico. <strong>El aliado clave para convertir oportunidades de Real Estate en éxitos plenamente blindados</strong>.</p>
-          <a href="contacto.html" class="btn-primary">Consultar este servicio <span>→</span></a>
+        <div class="footer-links">
+          <a href="index.html">Inicio</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="equipo.html">El Equipo</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://wa.me/5491167197817">📱 +54 9 11 6719 7817</a>
+          <a href="mailto:consultas@estudiosavini.com.ar"
+            >✉ consultas@estudiosavini.com.ar</a
+          >
         </div>
       </div>
-    </section>
+      <div class="footer-copy">© Savini Studio 2026 · Evolución de Activos</div>
+    </footer>
 
-    <!-- 03 -->
-    <section class="srv-item" id="ciber">
-      <div class="srv-item-inner">
-        <div class="srv-item-left">
-          <div class="srv-num">03</div>
-          <div class="srv-icon">🛡️</div>
-          <h2 class="srv-title">Ciberseguridad y Blindaje</h2>
-          <div class="srv-professional">
-            <span class="srv-pro-name">Sebastián Savini</span>
-            <span class="srv-pro-role">Desarrollador y Protección Digital</span>
-          </div>
-        </div>
-        <div class="srv-item-right">
-          <p>Crea aplicaciones que funcionan como <strong>bóvedas operativas para los activos tecnológicos</strong>. Transforma vulnerabilidades en fortalezas de vanguardia que preservan la continuidad del negocio.</p>
-          <a href="contacto.html" class="btn-primary">Consultar este servicio <span>→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 04 -->
-    <section class="srv-item srv-item--alt" id="counseling">
-      <div class="srv-item-inner">
-        <div class="srv-item-left">
-          <div class="srv-num">04</div>
-          <div class="srv-icon">🧘</div>
-          <h2 class="srv-title">Counseling & Mindfulness</h2>
-          <div class="srv-professional">
-            <span class="srv-pro-name">Clr. Adriana L. Muñoz</span>
-            <span class="srv-pro-role">Bienestar Humano y Gestión de Conflictos</span>
-          </div>
-        </div>
-        <div class="srv-item-right">
-          <p>Facilita la resolución de tensiones y el equilibrio emocional como <strong>base del éxito empresarial</strong>. Garantiza expansión en un entorno de paz y estabilidad relacional.</p>
-          <a href="contacto.html" class="btn-primary">Consultar este servicio <span>→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 05 -->
-    <section class="srv-item" id="impositiva">
-      <div class="srv-item-inner">
-        <div class="srv-item-left">
-          <div class="srv-num">05</div>
-          <div class="srv-icon">📑</div>
-          <h2 class="srv-title">Gestión Laboral e Impositiva</h2>
-          <div class="srv-professional">
-            <span class="srv-pro-name">Alicia C. Vaquero</span>
-            <span class="srv-pro-role">Especialista Impositiva y Previsional</span>
-          </div>
-        </div>
-        <div class="srv-item-right">
-          <p>Garantiza cumplimiento milimétrico de obligaciones fiscales mediante herramientas expertas. Aporta <strong>precisión técnica absoluta y total seguridad jurídica</strong> ante entes reguladores.</p>
-          <a href="contacto.html" class="btn-primary">Consultar este servicio <span>→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 06 -->
-    <section class="srv-item srv-item--alt" id="contable">
-      <div class="srv-item-inner">
-        <div class="srv-item-left">
-          <div class="srv-num">06</div>
-          <div class="srv-icon">📊</div>
-          <h2 class="srv-title">Gestión Contable</h2>
-          <div class="srv-professional">
-            <span class="srv-pro-name">Silvia Damiani</span>
-            <span class="srv-pro-role">Transparencia Económica</span>
-          </div>
-        </div>
-        <div class="srv-item-right">
-          <p>Responsable de Estados Contables y auditoría de datos para reflejar la realidad del negocio. <strong>Garante de visibilidad financiera impecable</strong> mediante ratios e índices confiables.</p>
-          <a href="contacto.html" class="btn-primary">Consultar este servicio <span>→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 07 tango -->
-     <section class="srv-item" id="tango">
-  <div class="srv-item-inner">
-    <div class="srv-item-left">
-      <div class="srv-num">07</div>
-      <div class="srv-icon">⚙️</div>
-      <h2 class="srv-title">Tango Gestión Gold — CRM GO</h2>
-      <div class="srv-professional">
-        <span class="srv-pro-name">Giuliana A. Miniace</span>
-        <span class="srv-pro-role">Optimización de Procesos Operativos</span>
-      </div>
-    </div>
-    <div class="srv-item-right">
-      <p>Incluimos <strong>Inteligencia Artificial</strong> para alinear tecnología y flujos de datos para simplificar tareas y potenciar productividad organizacional. Transforma la complejidad en un <strong>sistema ágil y rentable a medida del cliente</strong>.</p>
-      <a href="contacto.html" class="btn-primary">Consultar este servicio <span>→</span></a>
-    </div>
-  </div>
-</section>
-
-    <!-- 08 -->
-    <section class="srv-item" id="rrhh">
-      <div class="srv-item-inner">
-        <div class="srv-item-left">
-          <div class="srv-num">08</div>
-          <div class="srv-icon">🧑‍💼</div>
-          <h2 class="srv-title">Recursos Humanos</h2>
-          <div class="srv-professional">
-            <span class="srv-pro-name">Lic. Karen A. Nervi</span>
-            <span class="srv-pro-role">Desarrolladora de Estrategias</span>
-          </div>
-        </div>
-        <div class="srv-item-right">
-          <p>Lidera y optimiza el talento mediante procesos de selección y motivación. Su propósito es <strong>alinear las capacidades del personal con los objetivos estratégicos</strong> de la organización, impulsando así su máximo rendimiento.</p>
-          <a href="contacto.html" class="btn-primary">Consultar este servicio <span>→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 09 -->
-    <section class="srv-item srv-item--alt" id="nexo">
-      <div class="srv-item-inner">
-        <div class="srv-item-left">
-          <div class="srv-num">09</div>
-          <div class="srv-icon">🔗</div>
-          <h2 class="srv-title">Nexo Organizacional</h2>
-          <div class="srv-professional">
-            <span class="srv-pro-name">Lucia S. Barrientos</span>
-            <span class="srv-pro-role">Comunicación Estratégica y Atención</span>
-          </div>
-        </div>
-        <div class="srv-item-right">
-          <p>Canaliza con precisión técnica cada requerimiento hacia el área correspondiente de forma inmediata. <strong>Asegura soluciones rápidas y efectivas</strong> para las necesidades del cliente.</p>
-          <a href="contacto.html" class="btn-primary">Consultar este servicio <span>→</span></a>
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- CTA -->
-  <section class="srv-cta">
-    <div class="srv-cta-inner">
-      <div class="srv-cta-text">
-        <h2>¿No sabés por dónde empezar?</h2>
-        <p>En el diagnóstico estratégico identificamos qué áreas necesita su negocio. Sin cargo, sin compromiso.</p>
-      </div>
-      <a href="contacto.html" class="btn-primary">Solicitar diagnóstico gratuito <span>→</span></a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <div class="nav-logo-main" style="font-size:1.1rem;letter-spacing:0.15em;">SAVINI STUDIO</div>
-        <p class="footer-tagline">"Innovación en Blindaje Patrimonial<br/>y Bienestar Humano"</p>
-      </div>
-      <div class="footer-links">
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="equipo.html">El Equipo</a>
-        <a href="contacto.html">Contacto</a>
-      </div>
-      <div class="footer-contact">
-        <a href="https://wa.me/5491167197817">📱 +54 9 11 6719 7817</a>
-        <a href="mailto:consultas@estudiosavini.com.ar">✉ consultas@estudiosavini.com.ar</a>
-      </div>
-    </div>
-    <div class="footer-copy">© Savini Studio 2026 · Evolución de Activos</div>
-  </footer>
-
-  <script src="js/main.js"></script>
-  <script src="js/servicios.js"></script>
-</body>
+    <script src="js/main.js"></script>
+    <script src="js/servicios.js"></script>
+  </body>
 </html>

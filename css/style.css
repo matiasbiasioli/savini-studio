@@ -1128,6 +1128,12 @@ img {
   .pain-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .tabs {
+    display: none;
+  }
+  .accordion-mobile {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1147,14 +1153,6 @@ img {
   .nav-mobile-menu.open {
     display: flex;
   }
-
-  .tabs {
-    display: none;
-  }
-  .accordion-mobile {
-    display: block;
-  }
-
   .acc-name {
     display: none;
   }
@@ -1253,8 +1251,8 @@ img {
 }
 
 .tab-btn {
-  flex: 1;
-  min-width: 120px;
+  flex: 0 0 auto;
+  min-width: 100px;
   padding: 1rem 0.8rem;
   background: none;
   border: none;

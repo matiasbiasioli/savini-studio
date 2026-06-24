@@ -35,9 +35,9 @@ function initNodeDiagram() {
     const parent = canvas.parentElement;
     W = parent.offsetWidth;
     H = parent.offsetHeight;
-    canvas.width  = W * dpr;
+    canvas.width = W * dpr;
     canvas.height = H * dpr;
-    canvas.style.width  = W + 'px';
+    canvas.style.width = W + 'px';
     canvas.style.height = H + 'px';
     ctx.scale(dpr, dpr);
     cx = W / 2;
@@ -45,9 +45,9 @@ function initNodeDiagram() {
     radius = Math.min(W, H) * 0.37;
   }
 
-  const GREEN      = '#1db87a';
-  const GREEN_DIM  = 'rgba(29,184,122,0.18)';
-  const GREEN_FAINT= 'rgba(29,184,122,0.06)';
+  const GREEN = '#1db87a';
+  const GREEN_DIM = 'rgba(29,184,122,0.18)';
+  const GREEN_FAINT = 'rgba(29,184,122,0.06)';
 
   // Particles
   const particles = Array.from({ length: 9 }, (_, i) => ({
@@ -147,7 +147,7 @@ function positionSatellites() {
     const x = 50 + (Math.cos(angleRad) * r / w * 100);
     const y = 50 + (Math.sin(angleRad) * r / w * 100);
     sat.style.left = x + '%';
-    sat.style.top  = y + '%';
+    sat.style.top = y + '%';
     sat.style.transform = 'translate(-50%, -50%)';
   });
 }
@@ -183,7 +183,12 @@ function initNavSpy() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         links.forEach(l => l.classList.remove('active'));
-        const active = document.querySelector(`.nav-link[href*="${entry.target.id}"]`);
+        // Mapeo especial para "inicio" → index.html
+        const id = entry.target.id;
+        const selector = id === 'inicio'
+          ? `.nav-link[href="index.html"]`
+          : `.nav-link[href*="${id}"]`;
+        const active = document.querySelector(selector);
         if (active) active.classList.add('active');
       }
     });
