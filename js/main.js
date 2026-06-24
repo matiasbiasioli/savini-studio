@@ -42,7 +42,7 @@ function initNodeDiagram() {
     ctx.scale(dpr, dpr);
     cx = W / 2;
     cy = H / 2;
-    radius = Math.min(W, H) * 0.37;
+    radius = Math.min(W, H) * 0.42;
   }
 
   const GREEN = '#1db87a';
@@ -143,7 +143,7 @@ function positionSatellites() {
     const angleDeg = angles[i] - 90;
     const angleRad = angleDeg * Math.PI / 180;
     const w = diagram.offsetWidth;
-    const r = w * 0.37;
+    const r = w * 0.42;
     const x = 50 + (Math.cos(angleRad) * r / w * 100);
     const y = 50 + (Math.sin(angleRad) * r / w * 100);
     sat.style.left = x + '%';
