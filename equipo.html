@@ -1,191 +1,284 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>El Equipo — Savini Studio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/equipo.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Equipo — Savini Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/equipo.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="nav-wrapper">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-text">
+            <span class="nav-logo-main">SAVINI STUDIO</span>
+            <span class="nav-logo-sub">Evolución de Activos</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="equipo.html" class="nav-link active">El Equipo</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="contacto.html" class="btn-nav"
+          >Diagnóstico estratégico <span>→</span></a
+        >
+        <button class="nav-burger" id="navBurger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="nav-mobile-menu" id="navMobileMenu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="equipo.html" class="nav-link active">El Equipo</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="contacto.html" class="btn-nav">Diagnóstico estratégico →</a>
+      </div>
+    </header>
 
-  <!-- NAV -->
-  <header class="nav-wrapper">
-    <nav class="nav">
-      <a href="index.html" class="nav-logo">
-        <div class="nav-logo-text">
-          <span class="nav-logo-main">SAVINI STUDIO</span>
-          <span class="nav-logo-sub">Evolución de Activos</span>
+    <!-- HERO -->
+    <section class="equipo-hero">
+      <div class="equipo-hero-bg"></div>
+      <div class="equipo-hero-content">
+        <p class="section-eyebrow">Nuestros profesionales</p>
+        <h1 class="equipo-hero-title">
+          El equipo detrás<br />del <em>ecosistema</em>
+        </h1>
+        <p class="equipo-hero-desc">
+          Cada área cuenta con un especialista de trayectoria comprobada. Un
+          equipo multidisciplinario que trabaja de forma integrada para blindar
+          y potenciar su negocio.
+        </p>
+      </div>
+    </section>
+
+    <!-- LISTA DEL EQUIPO -->
+    <section class="equipo-section">
+      <div class="equipo-list">
+        <div class="miembro">
+          <span class="miembro-num">01</span>
+          <div class="miembro-left">
+            <div class="miembro-nombre">Dr. Claudio A. Savini</div>
+            <div class="miembro-titulo">Dirección General y Negociación</div>
+            <div class="miembro-area">Liderazgo y Negociación</div>
+          </div>
+          <div class="miembro-right">
+            <p class="miembro-desc">
+              Estructura con precisión los datos clave para garantizar
+              <strong
+                >decisiones eficientes bajo un rigor analítico absoluto</strong
+              >. Transforma escenarios caóticos en esquemas de ejecución lógica
+              que maximizan resultados.
+            </p>
+          </div>
         </div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Inicio</a></li>
-        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-        <li><a href="equipo.html" class="nav-link active">El Equipo</a></li>
-        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-      </ul>
-      <a href="contacto.html" class="btn-nav">Diagnóstico estratégico <span>→</span></a>
-      <button class="nav-burger" id="navBurger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-    <div class="nav-mobile-menu" id="navMobileMenu">
-      <a href="index.html" class="nav-link">Inicio</a>
-      <a href="servicios.html" class="nav-link">Servicios</a>
-      <a href="equipo.html" class="nav-link active">El Equipo</a>
-      <a href="contacto.html" class="nav-link">Contacto</a>
-      <a href="contacto.html" class="btn-nav">Diagnóstico estratégico →</a>
-    </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="equipo-hero">
-    <div class="equipo-hero-bg"></div>
-    <div class="equipo-hero-content">
-      <p class="section-eyebrow">Nuestros profesionales</p>
-      <h1 class="equipo-hero-title">El equipo detrás<br/>del <em>ecosistema</em></h1>
-      <p class="equipo-hero-desc">Cada área cuenta con un especialista de trayectoria comprobada. Un equipo multidisciplinario que trabaja de forma integrada para blindar y potenciar su negocio.</p>
-    </div>
-  </section>
-
-  <!-- LISTA DEL EQUIPO -->
-  <section class="equipo-section">
-    <div class="equipo-list">
-
-      <div class="miembro">
-        <span class="miembro-num">01</span>
-        <div class="miembro-left">
-          <div class="miembro-nombre">Dr. Claudio A. Savini</div>
-          <div class="miembro-titulo">Dirección General y Negociación</div>
-          <div class="miembro-area">Liderazgo y Negociación</div>
+        <div class="miembro">
+          <span class="miembro-num">02</span>
+          <div class="miembro-left">
+            <div class="miembro-nombre">Matías Savini</div>
+            <div class="miembro-titulo">
+              Gestión de Activos y Nuevos Negocios
+            </div>
+            <div class="miembro-area">Expansión y Rentabilidad</div>
+          </div>
+          <div class="miembro-right">
+            <p class="miembro-desc">
+              Válida rentabilidad y sostenibilidad de cada inversión con rigor
+              técnico.
+              <strong
+                >El aliado clave para convertir oportunidades de Real Estate en
+                éxitos plenamente blindados</strong
+              >.
+            </p>
+          </div>
         </div>
-        <div class="miembro-right">
-          <p class="miembro-desc">Estructura con precisión los datos clave para garantizar <strong>decisiones eficientes bajo un rigor analítico absoluto</strong>. Transforma escenarios caóticos en esquemas de ejecución lógica que maximizan resultados.</p>
+
+        <div class="miembro">
+          <span class="miembro-num">03</span>
+          <div class="miembro-left">
+            <div class="miembro-nombre">Sebastián Savini</div>
+            <div class="miembro-titulo">Desarrollador y Protección Digital</div>
+            <div class="miembro-area">Ciberseguridad y Blindaje</div>
+          </div>
+          <div class="miembro-right">
+            <p class="miembro-desc">
+              Crea aplicaciones que funcionan como
+              <strong>bóvedas operativas para los activos tecnológicos</strong>.
+              Transforma vulnerabilidades en fortalezas de vanguardia que
+              preservan la continuidad del negocio.
+            </p>
+          </div>
+        </div>
+
+        <div class="miembro">
+          <span class="miembro-num">04</span>
+          <div class="miembro-left">
+            <div class="miembro-nombre">Clr. Adriana L. Muñoz</div>
+            <div class="miembro-titulo">
+              Bienestar Humano y Gestión de Conflictos
+            </div>
+            <div class="miembro-area">Counseling & Mindfulness</div>
+          </div>
+          <div class="miembro-right">
+            <p class="miembro-desc">
+              Facilita la resolución de tensiones y el equilibrio emocional como
+              <strong>base del éxito empresarial</strong>. Garantiza expansión
+              en un entorno de paz y estabilidad relacional.
+            </p>
+          </div>
+        </div>
+
+        <div class="miembro">
+          <span class="miembro-num">05</span>
+          <div class="miembro-left">
+            <div class="miembro-nombre">Alicia C. Vaquero</div>
+            <div class="miembro-titulo">
+              Especialista Impositiva y Previsional
+            </div>
+            <div class="miembro-area">Gestión Laboral e Impositiva</div>
+          </div>
+          <div class="miembro-right">
+            <p class="miembro-desc">
+              Garantiza cumplimiento milimétrico de obligaciones fiscales
+              mediante herramientas expertas. Aporta
+              <strong
+                >precisión técnica absoluta y total seguridad jurídica</strong
+              >
+              ante entes reguladores.
+            </p>
+          </div>
+        </div>
+
+        <div class="miembro">
+          <span class="miembro-num">06</span>
+          <div class="miembro-left">
+            <div class="miembro-nombre">Silvia Damiani</div>
+            <div class="miembro-titulo">Transparencia Económica</div>
+            <div class="miembro-area">Gestión Contable</div>
+          </div>
+          <div class="miembro-right">
+            <p class="miembro-desc">
+              Responsable de Estados Contables y auditoría de datos para
+              reflejar la realidad del negocio.
+              <strong>Garante de visibilidad financiera impecable</strong>
+              mediante ratios e índices confiables.
+            </p>
+          </div>
+        </div>
+
+        <div class="miembro">
+          <span class="miembro-num">07</span>
+          <div class="miembro-left">
+            <div class="miembro-nombre">Lic. Karen A. Nervi</div>
+            <div class="miembro-titulo">Desarrolladora de Estrategias</div>
+            <div class="miembro-area">Recursos Humanos</div>
+          </div>
+          <div class="miembro-right">
+            <p class="miembro-desc">
+              Lidera y optimiza el talento mediante procesos de selección y
+              motivación. Su propósito es
+              <strong
+                >alinear las capacidades del personal con los objetivos
+                estratégicos</strong
+              >
+              de la organización, impulsando así su máximo rendimiento.
+            </p>
+          </div>
+        </div>
+
+        <div class="miembro">
+          <span class="miembro-num">08</span>
+          <div class="miembro-left">
+            <div class="miembro-nombre">Giuliana A. Miniace</div>
+            <div class="miembro-titulo">
+              Optimización de Procesos Operativos
+            </div>
+            <div class="miembro-area">Tango Gestión Gold — CRM GO</div>
+          </div>
+          <div class="miembro-right">
+            <p class="miembro-desc">
+              Incluimos <strong>Inteligencia Artificial</strong> para alinear
+              tecnología y flujos de datos para simplificar tareas y potenciar
+              productividad organizacional. Transforma la complejidad en un
+              <strong>sistema ágil y rentable a medida del cliente</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="miembro">
+          <span class="miembro-num">09</span>
+          <div class="miembro-left">
+            <div class="miembro-nombre">Lucia S. Barrientos</div>
+            <div class="miembro-titulo">
+              Comunicación Estratégica y Atención
+            </div>
+            <div class="miembro-area">Nexo Organizacional</div>
+          </div>
+          <div class="miembro-right">
+            <p class="miembro-desc">
+              Canaliza con precisión técnica cada requerimiento hacia el área
+              correspondiente de forma inmediata.
+              <strong>Asegura soluciones rápidas y efectivas</strong> para las
+              necesidades del cliente.
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="miembro">
-        <span class="miembro-num">02</span>
-        <div class="miembro-left">
-          <div class="miembro-nombre">Matías Savini</div>
-          <div class="miembro-titulo">Gestión de Activos y Nuevos Negocios</div>
-          <div class="miembro-area">Expansión y Rentabilidad</div>
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-inner">
+        <div class="cta-text">
+          <h2>¿Querés conocer al equipo en persona?</h2>
+          <p>Agendá una reunión de diagnóstico estratégico sin cargo.</p>
         </div>
-        <div class="miembro-right">
-          <p class="miembro-desc">Válida rentabilidad y sostenibilidad de cada inversión con rigor técnico. <strong>El aliado clave para convertir oportunidades de Real Estate en éxitos plenamente blindados</strong>.</p>
+        <a href="contacto.html" class="btn-primary btn-cta"
+          >Contactar ahora <span>→</span></a
+        >
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div
+            class="nav-logo-main"
+            style="font-size: 1.1rem; letter-spacing: 0.15em"
+          >
+            SAVINI STUDIO
+          </div>
+          <p class="footer-tagline">
+            "Innovación en Blindaje Patrimonial<br />y Bienestar Humano"
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Inicio</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="equipo.html">El Equipo</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://wa.me/5491167197817">📱 +54 9 11 6719 7817</a>
+          <a href="mailto:consultas@estudiosavini.com.ar"
+            >✉ consultas@estudiosavini.com.ar</a
+          >
         </div>
       </div>
+      <div class="footer-copy">© Savini Studio 2026 · Evolución de Activos</div>
+    </footer>
 
-      <div class="miembro">
-        <span class="miembro-num">03</span>
-        <div class="miembro-left">
-          <div class="miembro-nombre">Sebastián Savini</div>
-          <div class="miembro-titulo">Desarrollador y Protección Digital</div>
-          <div class="miembro-area">Ciberseguridad y Blindaje</div>
-        </div>
-        <div class="miembro-right">
-          <p class="miembro-desc">Crea aplicaciones que funcionan como <strong>bóvedas operativas para los activos tecnológicos</strong>. Transforma vulnerabilidades en fortalezas de vanguardia que preservan la continuidad del negocio.</p>
-        </div>
-      </div>
-
-      <div class="miembro">
-        <span class="miembro-num">04</span>
-        <div class="miembro-left">
-          <div class="miembro-nombre">Clr. Adriana L. Muñoz</div>
-          <div class="miembro-titulo">Bienestar Humano y Gestión de Conflictos</div>
-          <div class="miembro-area">Counseling & Mindfulness</div>
-        </div>
-        <div class="miembro-right">
-          <p class="miembro-desc">Facilita la resolución de tensiones y el equilibrio emocional como <strong>base del éxito empresarial</strong>. Garantiza expansión en un entorno de paz y estabilidad relacional.</p>
-        </div>
-      </div>
-
-      <div class="miembro">
-        <span class="miembro-num">05</span>
-        <div class="miembro-left">
-          <div class="miembro-nombre">Alicia C. Vaquero</div>
-          <div class="miembro-titulo">Especialista Impositiva y Previsional</div>
-          <div class="miembro-area">Gestión Laboral e Impositiva</div>
-        </div>
-        <div class="miembro-right">
-          <p class="miembro-desc">Garantiza cumplimiento milimétrico de obligaciones fiscales mediante herramientas expertas. Aporta <strong>precisión técnica absoluta y total seguridad jurídica</strong> ante entes reguladores.</p>
-        </div>
-      </div>
-
-      <div class="miembro">
-        <span class="miembro-num">06</span>
-        <div class="miembro-left">
-          <div class="miembro-nombre">Silvia Damiani</div>
-          <div class="miembro-titulo">Transparencia Económica</div>
-          <div class="miembro-area">Gestión Contable</div>
-        </div>
-        <div class="miembro-right">
-          <p class="miembro-desc">Responsable de Estados Contables y auditoría de datos para reflejar la realidad del negocio. <strong>Garante de visibilidad financiera impecable</strong> mediante ratios e índices confiables.</p>
-        </div>
-      </div>
-
-      <div class="miembro">
-        <span class="miembro-num">07</span>
-        <div class="miembro-left">
-          <div class="miembro-nombre">Lic. Karen A. Nervi</div>
-          <div class="miembro-titulo">Desarrolladora de Estrategias</div>
-          <div class="miembro-area">Recursos Humanos</div>
-        </div>
-        <div class="miembro-right">
-          <p class="miembro-desc">Lidera y optimiza el talento mediante procesos de selección y motivación. Su propósito es <strong>alinear las capacidades del personal con los objetivos estratégicos</strong> de la organización, impulsando así su máximo rendimiento.</p>
-        </div>
-      </div>
-
-      <div class="miembro">
-        <span class="miembro-num">08</span>
-        <div class="miembro-left">
-          <div class="miembro-nombre">Lucia S. Barrientos</div>
-          <div class="miembro-titulo">Comunicación Estratégica y Atención</div>
-          <div class="miembro-area">Nexo Organizacional</div>
-        </div>
-        <div class="miembro-right">
-          <p class="miembro-desc">Canaliza con precisión técnica cada requerimiento hacia el área correspondiente de forma inmediata. <strong>Asegura soluciones rápidas y efectivas</strong> para las necesidades del cliente.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="cta-inner">
-      <div class="cta-text">
-        <h2>¿Querés conocer al equipo en persona?</h2>
-        <p>Agendá una reunión de diagnóstico estratégico sin cargo.</p>
-      </div>
-      <a href="contacto.html" class="btn-primary btn-cta">Contactar ahora <span>→</span></a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <div class="nav-logo-main" style="font-size:1.1rem;letter-spacing:0.15em;">SAVINI STUDIO</div>
-        <p class="footer-tagline">"Innovación en Blindaje Patrimonial<br/>y Bienestar Humano"</p>
-      </div>
-      <div class="footer-links">
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="equipo.html">El Equipo</a>
-        <a href="contacto.html">Contacto</a>
-      </div>
-      <div class="footer-contact">
-        <a href="https://wa.me/5491167197817">📱 +54 9 11 6719 7817</a>
-        <a href="mailto:consultas@estudiosavini.com.ar">✉ consultas@estudiosavini.com.ar</a>
-      </div>
-    </div>
-    <div class="footer-copy">© Savini Studio 2026 · Evolución de Activos</div>
-  </footer>
-
-  <script src="js/main.js"></script>
-  <script src="js/equipo.js"></script>
-</body>
+    <script src="js/main.js"></script>
+    <script src="js/equipo.js"></script>
+  </body>
 </html>
