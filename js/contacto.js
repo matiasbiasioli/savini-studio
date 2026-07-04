@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const btn = form.querySelector('.ctc-submit');
 
-    // Estado de carga
-    btn.textContent = 'Enviando...';
+    // Estado de carga con spinner
+    btn.innerHTML = `<span class="spinner"></span> Enviando...`;
     btn.disabled = true;
 
     // Recopilar datos del formulario

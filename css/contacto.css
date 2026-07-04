@@ -220,3 +220,18 @@ a.ctc-info-value:hover { color: var(--white); }
   .ctc-main { padding-left: 2rem; padding-right: 2rem; }
   .ctc-map { height: 280px; }
 }
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(5, 8, 16, 0.3);
+  border-top-color: var(--bg);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

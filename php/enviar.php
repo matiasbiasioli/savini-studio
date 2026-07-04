@@ -12,8 +12,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // ── Configuración ──────────────────────
-$destinatario = 'consultas@estudiosavini.com.ar'; // email donde llegan los mensajes
-$asunto_base  = 'Nuevo contacto desde Savini Studio';
+$destinatario = 'consultas@estudiosavini.com.ar'; 
+$asunto_base  = 'Nuevo mensaje desde Savini Studio Web';
 // ───────────────────────────────────────
 
 // Función para limpiar los datos recibidos
@@ -29,7 +29,7 @@ $telefono = limpiar($_POST['telefono'] ?? '');
 $servicio = limpiar($_POST['servicio'] ?? '');
 $mensaje  = limpiar($_POST['mensaje']  ?? '');
 
-// Validaciones básicas
+// Validaciones
 if (empty($nombre) || empty($email) || empty($mensaje)) {
     http_response_code(400);
     echo json_encode(['success' => false, 'message' => 'Completá los campos obligatorios.']);
@@ -61,7 +61,7 @@ $mensaje
 ";
 
 // Headers del email
-$headers  = "From: no-reply@estudiosavini.com.ar\r\n";
+$headers  = "From: Savini web no-reply@estudiosavini.com.ar\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 
