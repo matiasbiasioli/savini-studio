@@ -148,7 +148,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: flex-start;
 }
 .srv-item-right p {
   font-size: 1.05rem;
@@ -173,12 +172,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
-  flex-wrap: wrap;
-}
-.srv-cta-inner .btn-primary {
-  width: auto;
-  align-self: center;
-  flex-shrink: 0;
 }
 .srv-cta-text h2 {
   font-family: var(--font-display);
@@ -203,5 +196,83 @@
   .srv-item { padding: 3.5rem 2rem; }
   .srv-index { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; }
   .srv-cta-inner { flex-direction: column; text-align: center; }
-  
+}
+
+/* ══════════════════════════════════════
+   MÁS INFO — expandible
+══════════════════════════════════════ */
+.btn-mas-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--border2);
+  color: var(--green);
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all var(--transition);
+  margin-bottom: 0.5rem;
+}
+.btn-mas-info:hover {
+  border-color: var(--green);
+  background: var(--green-dim);
+}
+.btn-mas-info.open {
+  background: var(--green-dim);
+  border-color: var(--green);
+}
+.btn-mas-info.open span { display: inline-block; transform: rotate(180deg); }
+
+.srv-mas-info {
+  display: none;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  padding: 1.8rem 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  animation: fadeUp 0.3s ease;
+}
+.srv-mas-info.open { display: block; }
+.srv-mas-info h4 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+.srv-mas-info p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+.srv-mas-info ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.srv-mas-info ul li {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: var(--gray);
+  padding-left: 1rem;
+  border-left: 2px solid var(--border2);
+}
+.srv-mas-info ul li strong { color: var(--white); font-weight: 500; }
+.srv-resultado {
+  font-size: 0.88rem !important;
+  color: var(--gray) !important;
+  background: var(--bg3);
+  padding: 1rem 1.2rem;
+  border-radius: var(--radius);
+  margin-top: 0.5rem;
 }

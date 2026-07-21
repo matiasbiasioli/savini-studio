@@ -22,15 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.srv-item[id]');
   const indexLinks = document.querySelectorAll('.srv-index a');
 
-const spy = new IntersectionObserver((entries) => {
+  const spy = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Limpia todos
-        indexLinks.forEach(l => {
-          l.style.color = '';
-          l.style.borderBottomColor = '';
-        });
-        // Marca solo el activo
+        indexLinks.forEach(l => l.style.color = '');
         const active = document.querySelector(`.srv-index a[href="#${entry.target.id}"]`);
         if (active) {
           active.style.color = 'var(--green)';
@@ -42,4 +37,27 @@ const spy = new IntersectionObserver((entries) => {
 
   sections.forEach(s => spy.observe(s));
 
+});
+
+/* ── MÁS INFO expandible ── */
+document.querySelectorAll('.btn-mas-info').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const targetId = btn.dataset.target;
+    const panel = document.getElementById(targetId);
+    const isOpen = panel.classList.contains('open');
+
+    // Cerrar todos
+    document.querySelectorAll('.srv-mas-info').forEach(p => p.classList.remove('open'));
+    document.querySelectorAll('.btn-mas-info').forEach(b => {
+      b.classList.remove('open');
+      b.querySelector('span').style.transform = '';
+    });
+
+    // Abrir el clickeado si estaba cerrado
+    if (!isOpen) {
+      panel.classList.add('open');
+      btn.classList.add('open');
+      btn.querySelector('span').style.transform = 'rotate(180deg)';
+    }
+  });
 });

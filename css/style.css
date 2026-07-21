@@ -6,22 +6,26 @@
 
 /* ── Variables ── */
 :root {
-  /* Fondos — azul profundo oscuro */
-  --bg: #050810;
-  --bg2: #080d1a;
-  --bg3: #0d1426;
-  --bg4: #121b30;
+  /* Fondos — Midnight Blue / Dark Navy */
+  --bg: #020714;
+  --bg2: #050d1f;
+  --bg3: #091228;
+  --bg4: #0d1932;
 
-  /* Acento — verde petróleo */
+  /* Acento — verde petróleo (se mantiene) */
   --green: #1a9e8f;
   --green2: #22c4b2;
   --green-dim: rgba(26, 158, 143, 0.15);
   --green-glow: rgba(26, 158, 143, 0.06);
 
-  /* Textos */
-  --white: #eef2f7;
-  --gray: #7a8faa;
-  --gray2: #3a4f6a;
+  /* Texto */
+  --white: #ffffff;
+  --gray: #b0bec5;
+  --gray2: #546e7a;
+
+  /* Plata — para botones */
+  --silver: #c0c8d0;
+  --silver2: #dde3e8;
 
   /* Bordes */
   --border: rgba(26, 158, 143, 0.14);
@@ -128,8 +132,8 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background: var(--green);
-  color: var(--bg);
+  background: var(--silver);
+  color: var(--bg3);
   font-family: var(--font-ui);
   font-size: 0.82rem;
   font-weight: 700;
@@ -144,7 +148,7 @@ img {
     transform var(--transition);
 }
 .btn-primary:hover {
-  background: var(--green2);
+  background: var(--silver2);
   transform: translateY(-1px);
 }
 .btn-primary span {
@@ -182,8 +186,8 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--green);
-  color: var(--bg);
+  background: var(--silver);
+  color: var(--bg3);
   font-family: var(--font-ui);
   font-size: 0.76rem;
   font-weight: 700;
@@ -194,9 +198,7 @@ img {
   transition: background var(--transition);
   white-space: nowrap;
 }
-.btn-nav:hover {
-  background: var(--green2);
-}
+.btn-nav:hover { background: var(--silver2); }
 
 /* ══════════════════════════════════════
    NAV
